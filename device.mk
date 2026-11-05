@@ -38,7 +38,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Crypto
 PRODUCT_PACKAGES += \
     qcom_decrypt \
-    qcom_decrypt_fbe
+    qcom_decrypt_fbe \
+aera-browser-jail
 
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
