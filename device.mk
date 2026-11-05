@@ -17,7 +17,7 @@
 #
 
 # fscrypt policy
-TW_USE_FSCRYPT_POLICY := 2
+AERA_USE_FSCRYPT_POLICY := 2
 
 # Display
 TARGET_SCREEN_HEIGHT := 2400
@@ -39,11 +39,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe \
-aera-browser-jail
+    aera-browser-jail
 
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
+AERA_INCLUDE_CRYPTO := true
+AERA_INCLUDE_CRYPTO_FBE := true
+AERA_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # platform
 PLATFORM_VERSION := 99.87.36
@@ -65,14 +65,14 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_DEVICE_MODULES += libion vendor.display.config@1.0 vendor.display.config@2.0 libdisplayconfig.qti
 
 # TWRP specific build flags
-TW_THEME := portrait_hdpi
+AERA_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_INCLUDE_RESETPROP := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TWRP_INCLUDE_LOGCAT := true
+AERA_EXCLUDE_DEFAULT_USB_INIT := true
+AERA_INCLUDE_RESETPROP := true
+AERA_INPUT_BLACKLIST := "hbtp_vm"
+AERA_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+AERA_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 
