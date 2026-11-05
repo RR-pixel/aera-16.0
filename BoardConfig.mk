@@ -132,7 +132,7 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 TW_INCLUDE_PYTHON := true
 
 # frame rate
-TW_FRAMERATE := 120
+AERA_FRAMERATE := 120
 #
 
 # device information for "fastboot update <zip-file>"
@@ -144,5 +144,4 @@ AB_OTA_UPDATER := false
 #
 
 # no wlan, please!
-TW_NO_NETWORK := true
 #
